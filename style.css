@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+    grid-template-rows: 50px auto 100px;
+    grid-template-areas: 
+        "header header header"
+        "sidebar1 content sidebar2"
+        "footer footer footer";
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(255, 162, 0);
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+main {
+    grid-area: content;
+    margin: 30px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+footer {
+    grid-area: footer;
+    background-color: black;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.niz {
+    color: white;
+}
+
+.sidebar1 {
+    grid-area: sidebar1;
+    background-color: antiquewhite;
+}
+
+.sidebar2 {
+    grid-area: sidebar2;
+    background-color: antiquewhite;
+}
